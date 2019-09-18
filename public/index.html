@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <script src="js/jquery-3.4.1.js"></script>
+    
+
+    <title>Online Voting System</title>
+</head>
+
+<body>
+    <H1>Online Voting System</H1>
+    <main>
+        <h2> Candidate Registration</h2>
+        <a href="Vreg.html"><h2>Voters Registration</h2></a>
+        <div>
+            <h3>Candidates</h3>
+            <form id="candForm">
+                    <input type="text" name="name" id="canName" placeholder="Name"><br>
+                    <input type="number" name="age" id="canAge"  placeholder="Age"><br>
+                    <input type="text" name="party" id="party" placeholder="Party" ><br>
+                    <input type="text" name="home_state" id="canState" placeholder="Home state"><br>
+                    <input type="text" name="running_mate" id="runMate" placeholder="Running mate"><br>
+                    <button id="cregBtn" type="submit" >Register</button>
+                    <button id="canBtn" type="submit">View Candidate</button>
+                    <input type="button" onclick="location.href='allcandidates.html';" value="View All" />
+            </form>
+        </div>
+    </main>   
+</body>
+<script src="js/source.js"></script>
+
+</html>

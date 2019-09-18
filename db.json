@@ -1,0 +1,102 @@
+{
+  "candidates": [
+    {
+      "id": 1,
+      "name": "Muhammadu Buhari",
+      "age": "77",
+      "party": "PDP",
+      "home_state": "katsina",
+      "running_mate": "Yemi Osinbajo"
+    },
+    {
+      "id": 2,
+      "name": "Atiku Abubakar",
+      "age": "73",
+      "party": "APC",
+      "home_state": "Adamawa",
+      "running_mate": "Peter Obi"
+    },
+    {
+      "name": "Dolapo",
+      "age": "55",
+      "party": "dssdss",
+      "home_state": "sddsd",
+      "running_mate": "sdsdd",
+      "id": 3
+    },
+    {
+      "name": "gkkgg",
+      "age": "45",
+      "party": "kkk",
+      "home_state": "kjjj",
+      "running_mate": "kkkkkk",
+      "id": 4
+    },
+    {
+      "name": "Ogodo Ufuoma",
+      "age": "25",
+      "party": "dssdss",
+      "home_state": "dssd",
+      "running_mate": "fefeef",
+      "id": 5
+    },
+    {
+      "name": "qqq",
+      "age": "44",
+      "party": "qqq",
+      "home_state": "qqq",
+      "running_mate": "qqqq",
+      "id": 7
+    }
+  ],
+  "voters": [
+    {
+      "id": 1,
+      "name": "Jumoke",
+      "age": 25,
+      "home state": "Osun"
+    },
+    {
+      "id": 2,
+      "name": "Yemi Alade",
+      "age": 22,
+      "home state": "Lagos"
+    },
+    {
+      "name": "Dolapo",
+      "age": "56",
+      "home_state": "efffef",
+      "id": 3
+    },
+    {
+      "name": "gkkgg",
+      "age": "56",
+      "home_state": "River state",
+      "id": 4
+    },
+    {
+      "name": "hjhjhj",
+      "age": "566",
+      "home_state": "hjhjhj",
+      "id": 5
+    },
+    {
+      "name": "lkkh",
+      "age": "45",
+      "home_state": "jjgs",
+      "id": 6
+    },
+    {
+      "name": "ttt",
+      "age": "52",
+      "home_state": "lljg",
+      "id": 7
+    },
+    {
+      "name": "8dhdh",
+      "age": "445",
+      "home_state": "dsae",
+      "id": 8
+    }
+  ]
+}
