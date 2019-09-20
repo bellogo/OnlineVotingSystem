@@ -1,52 +1,22 @@
 {
   "candidates": [
     {
-      "id": 1,
+      "id": 2,
+      "name": "Dolapo",
+      "age": "73",
+      "party": "APC",
+      "home_state": "Adamawa",
+      "running_mate": "Peter Obi",
+      "vote_count": "9"
+    },
+    {
       "name": "Muhammadu Buhari",
       "age": "77",
       "party": "PDP",
       "home_state": "katsina",
-      "running_mate": "Yemi Osinbajo"
-    },
-    {
-      "id": 2,
-      "name": "Atiku Abubakar",
-      "age": "73",
-      "party": "APC",
-      "home_state": "Adamawa",
-      "running_mate": "Peter Obi"
-    },
-    {
-      "name": "Dolapo",
-      "age": "55",
-      "party": "dssdss",
-      "home_state": "sddsd",
-      "running_mate": "sdsdd",
+      "running_mate": "Yemi Osinbajo",
+      "vote_count": "0",
       "id": 3
-    },
-    {
-      "name": "gkkgg",
-      "age": "45",
-      "party": "kkk",
-      "home_state": "kjjj",
-      "running_mate": "kkkkkk",
-      "id": 4
-    },
-    {
-      "name": "Ogodo Ufuoma",
-      "age": "25",
-      "party": "dssdss",
-      "home_state": "dssd",
-      "running_mate": "fefeef",
-      "id": 5
-    },
-    {
-      "name": "qqq",
-      "age": "44",
-      "party": "qqq",
-      "home_state": "qqq",
-      "running_mate": "qqqq",
-      "id": 7
     }
   ],
   "voters": [
@@ -54,49 +24,76 @@
       "id": 1,
       "name": "Jumoke",
       "age": 25,
-      "home state": "Osun"
+      "home_state": "Osun",
+      "email": "jumoke@gmail.com",
+      "password": "yy",
+      "vote_count": "1"
     },
     {
       "id": 2,
       "name": "Yemi Alade",
       "age": 22,
-      "home state": "Lagos"
+      "home_state": "Lagos",
+      "password": "1234",
+      "email": "yemi@gmail.com",
+      "vote_count": "1"
     },
     {
       "name": "Dolapo",
       "age": "56",
-      "home_state": "efffef",
+      "home_state": "lagos",
+      "email": "dolapo@gmail.com",
+      "password": "1234",
+      "vote_count": "1",
       "id": 3
     },
     {
-      "name": "gkkgg",
-      "age": "56",
+      "name": "Ogodo Ufuoma Bella",
+      "age": "25",
       "home_state": "River state",
+      "email": "ufuomaogodo@gmail.com",
+      "password": "1234",
+      "vote_count": "1",
       "id": 4
     },
     {
-      "name": "hjhjhj",
-      "age": "566",
-      "home_state": "hjhjhj",
+      "name": "paris",
+      "age": "45",
+      "home_state": "Rivers",
+      "email": "paris@gmail.com",
+      "password": "1234",
+      "vote_count": "1",
       "id": 5
     },
     {
-      "name": "lkkh",
+      "name": "karo",
       "age": "45",
-      "home_state": "jjgs",
+      "home_state": "jkjkj",
+      "email": "karo@gmail.com",
+      "password": "1234",
+      "vote_count": "0",
       "id": 6
     },
     {
-      "name": "ttt",
-      "age": "52",
-      "home_state": "lljg",
+      "name": "hgghgh",
+      "age": "45",
+      "home_state": "kjkjkj",
+      "email": "jhjhh@gmail.com",
+      "password": "1234",
+      "vote_count": "0",
       "id": 7
+    }
+  ],
+  "admins": [
+    {
+      "id": 1,
+      "email": "ufuomaogodo@gmail.com",
+      "password": "sparow"
     },
     {
-      "name": "8dhdh",
-      "age": "445",
-      "home_state": "dsae",
-      "id": 8
+      "id": 2,
+      "email": "dolapo@gmail.com",
+      "password": "1234"
     }
   ]
 }
