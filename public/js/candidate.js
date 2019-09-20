@@ -2,7 +2,7 @@ $.ajax({
     url: 'http://localhost:3000/candidates',
     method: 'get',
 }).done((e) => {
-    alert("gotten data")
+    //alert("gotten data")
     for (let i = 0; i < e.length; i++) {
         $('#tbody').append(
             `<tr>

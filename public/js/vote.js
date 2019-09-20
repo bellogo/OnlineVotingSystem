@@ -12,13 +12,13 @@ $.ajax({
     }
     $("input[type='button']").click(function () {
         var radioValue = $("input[name='candidate']:checked").val();
-        alert(radioValue);
+        //alert(radioValue);
     for(let c = 0; c < e.length; c++){
         if(e[c].name == radioValue){
            alert(e[c].name)
           let id = e[c].id;
           let vote = parseInt(e[c].vote_count) + 1
-          alert(vote)
+          //alert(vote)
           $.ajax({
             url: `http://localhost:3000/candidates/${id}`,
             method: 'patch',

@@ -64,8 +64,8 @@ $('#signIn').click((e) => {
         for (let a = 0; a < e.length; a++) {
             if (e[a].email === vemail) {
                 emailflag = true;
-                alert('found email')
-                alert(JSON.stringify(e[a].password))
+                //alert('found email')
+                //alert(JSON.stringify(e[a].password))
                 if (e[a].password === vpassword) {
                     passwordflag = true;
                     //alert('password match')
@@ -127,11 +127,11 @@ $('#adminSign').click((e) => {
         for (let b = 0; b < e.length; b++) {
             if (e[b].email === aemail) {
                 emailflag = true;
-                alert('found email')
-                alert(JSON.stringify(e[b].password))
+                //alert('found email')
+                //alert(JSON.stringify(e[b].password))
                 if (e[b].password === apassword) {
                     passwordflag = true;
-                    alert('password match')
+                    //alert('password match')
                 }
             }
         }
@@ -153,7 +153,7 @@ $('#adminSign').click((e) => {
         }
     })
 })
-alert("add code")
+//alert("add code")
 
 // Set the date we're counting down to format: "Jan 5, 2021 15:37:25"
 var countDownDate = new Date("sept 21, 2019 0:49:59").getTime();

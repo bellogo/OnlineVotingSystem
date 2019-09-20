@@ -39,7 +39,7 @@ $.ajax({
     url: 'http://localhost:3000/candidates',
     method: 'get',
 }).done((e) => {
-    alert("gotten data")
+    //alert("gotten data")
     for (let i = 0; i < e.length; i++) {
         $('#tbody').append(
             `<tr>
@@ -88,7 +88,7 @@ $.ajax({
 
     $('.edit-btn').on('click', (e) => {
         let id = e.target.id.split('edt-').join('')
-        alert(id)
+        //alert(id)
         localStorage.setItem('id',id)
             window.location.replace("update.html")
         })
