@@ -1,4 +1,4 @@
-#Online Voting System
+# Online Voting System
 This Project was made under the assumption that The nigerian government is tired of using manual method for voting
 their candidates due to the continual stress it creates and the high rate of election rigging.
 
