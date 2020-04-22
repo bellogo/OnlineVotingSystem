@@ -2,12 +2,12 @@
   "candidates": [
     {
       "id": 2,
-      "name": "Dolapo",
+      "name": "Atiku",
       "age": "73",
       "party": "APC",
       "home_state": "Adamawa",
       "running_mate": "Peter Obi",
-      "vote_count": "9"
+      "vote_count": "100"
     },
     {
       "name": "Muhammadu Buhari",
@@ -15,8 +15,17 @@
       "party": "PDP",
       "home_state": "katsina",
       "running_mate": "Yemi Osinbajo",
-      "vote_count": "0",
+      "vote_count": "3",
       "id": 3
+    },
+    {
+      "name": "Ochuko ",
+      "age": "40",
+      "party": "APC",
+      "home_state": "Rivers",
+      "running_mate": "Ufuoma",
+      "vote_count": "56",
+      "id": 5
     }
   ],
   "voters": [
@@ -71,7 +80,7 @@
       "home_state": "jkjkj",
       "email": "karo@gmail.com",
       "password": "1234",
-      "vote_count": "0",
+      "vote_count": "1",
       "id": 6
     },
     {
@@ -80,18 +89,101 @@
       "home_state": "kjkjkj",
       "email": "jhjhh@gmail.com",
       "password": "1234",
-      "vote_count": "0",
+      "vote_count": "1",
       "id": 7
+    },
+    {
+      "name": "kemi",
+      "age": "24",
+      "home_state": "lagos",
+      "email": "kemi@gmail.com",
+      "password": "1234",
+      "vote_count": "1",
+      "id": 8
+    },
+    {
+      "name": "Decagon",
+      "age": "55",
+      "home_state": "Ondo",
+      "email": "sam@sam.sam",
+      "password": "sam",
+      "vote_count": "1",
+      "id": 9
+    },
+    {
+      "name": "Ochuko Oriodofe",
+      "age": "25",
+      "home_state": "River state",
+      "email": "femioriodofe@gmail.com",
+      "password": "1234",
+      "vote_count": "1",
+      "id": 10
+    },
+    {
+      "name": "Ogodo Ufuoma Bella",
+      "age": "45",
+      "home_state": "River state",
+      "email": "bado@gmail.com",
+      "password": "1234",
+      "vote_count": "0",
+      "id": 11
+    },
+    {
+      "name": "Ogodo Ufuoma Bella",
+      "age": "25",
+      "home_state": "Lagos",
+      "email": "sdev7@yahoo.com",
+      "password": "1234",
+      "vote_count": "1",
+      "id": 12
+    },
+    {
+      "name": "Akpezi",
+      "age": "29",
+      "home_state": "Delta",
+      "email": "akpezi@gmail.com",
+      "password": "1234",
+      "vote_count": "0",
+      "id": 13
+    },
+    {
+      "name": "destny",
+      "age": "56",
+      "home_state": "Cross River",
+      "email": "destiny@hhj.com",
+      "password": "2342",
+      "vote_count": "0",
+      "id": 14
+    },
+    {
+      "name": "golag",
+      "age": "33",
+      "home_state": "Benue",
+      "email": "gift@gmail.com",
+      "password": "1233",
+      "vote_count": "0",
+      "id": 15
+    },
+    {
+      "name": "Ugonna Okeogu",
+      "age": "18",
+      "home_state": "Abia",
+      "email": "dfdgd@gmail.com",
+      "password": "1234",
+      "vote_count": "1",
+      "id": 16
     }
   ],
   "admins": [
     {
       "id": 1,
+      "name": "Ufuoma Ogodo",
       "email": "ufuomaogodo@gmail.com",
-      "password": "sparow"
+      "password": "1234"
     },
     {
       "id": 2,
+      "name": "Dolapo",
       "email": "dolapo@gmail.com",
       "password": "1234"
     }

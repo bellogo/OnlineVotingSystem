@@ -1,44 +1,152 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <link rel="stylesheet" href="style/style.css" type="text/css">
+    <link type="text/css" rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <script src="js/jquery-3.4.1.js"></script>
-    <link rel="stylesheet" href="style/style.css" type="text/css" />
-
-    <title>Online Voting System</title>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <meta charset="UTF-8">
+    <title>Online Polling System</title>
+    <link rel="shortcut icon" href="./images/vote3.png" type="image/x-icon">
 </head>
 
 <body>
 
-    <main class="flex-container">
-        <H1>Online Voting System</H1>
+    <nav class="flex-container-nav">
         <div>
-            <p id="demo"></p>
-            <span>voting deadline</span>
+            <img src="./images/vote3.png" class="navbar-brand" alt="logo" style="width:40px;">
+            <h1 class="navbar-text">
+                Online Polling System
+            </h1>
         </div>
-        
-        <div>
+
+        <form id="signInForm" class="form-inline flex-row-nowrap">
+            <div>
+                <input class="form-control" type="text" name="email" id="email" placeholder="Email" required>
+            </div>
+            <div>
+                <input class="form-control" type="password" name="password" id="password" placeholder="Password"
+                    required>
+            </div>
+            <button id="signIn" type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+        <div class="adminloginAgain">
+            <span class="continueLogIn" href="admin.html"></span>
+            <button id="signout" type="button" class="btn btn-danger">Sign out</button>
+        </div>
+    </nav>
+
+    <main class="container-fluid flex-container">
+        <div class="left flex-container-coloumn">
+            <div>
+                <p id="demo"></p>
+                <p class="deadline">voting deadline</p>
+            </div>
+            <div class="weather form-group mb-3">
+                <h2>Weather Checker</h2>
+                <div class="input-group mb-3 padding">
+                    <input type="text" class="form-control" id="locationInput" placeholder="Enter your location">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-dark" id="checkWeather">Check Weather</button>
+                    </div>
+                </div>
+                <p class="weatherReport"></p>
+            </div>
+        </div>
+
+        <div class="right">
             <h3>Voters Sign up</h3>
             <form id="votForm">
-                    <input type="text" name="name" id="votName" placeholder="Name"><br>
-                    <input type="number" name="age" id="votAge"  placeholder="Age"><br>
-                    <input type="text" name="home state" id="votState" placeholder="Home state"><br>
-                    <input type="text" name="email" id="vemail" placeholder="Email"><br>
-                    <input type="text" name="password" id="vpassword" placeholder="Password"><br>
-                    <button id="vregBtn" type="submit">Sign up</button>
-                
+                <div class="form-group">
+                    <input class="form-control" type="text" name="name" id="votName" placeholder="Full Name" required>
+                    <div class="invalid-feedback alignLeft">Please fill out this field.</div>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="number" name="age" min="18" max="120" id="votAge"
+                        placeholder="Age" required>
+                    <div class="invalid-feedback  alignLeft">Please fill out this field.</div>
+                </div>
+                <div class="form-group">
+                    <select class="form-control" type="text" name="home state" id="votState" placeholder="Home state"
+                        required>
+                        <option value="" disabled selected>Select State</option>
+                        <option value="Abia">Abia</option>
+                        <option value="Adamawa">Adamawa</option>
+                        <option value="Akwa Ibom">Akwa Ibom</option>
+                        <option value="Anambra">Anambra</option>
+                        <option value="Bauchi">Bauchi</option>
+                        <option value="Bayelsa">Bayelsa</option>
+                        <option value="Benue">Benue</option>
+                        <option value="Borno">Borno</option>
+                        <option value="Cross River">Cross River</option>
+                        <option value="Delta">Delta</option>
+                        <option value="Ebonyi">Ebonyi</option>
+                        <option value="Edo">Edo</option>
+                        <option value="Ekiti">Ekiti</option>
+                        <option value="Enugu">Enugu</option>
+                        <option value="Abuja">Abuja</option>
+                        <option value="Gombe">Gombe</option>
+                        <option value="Imo">Imo</option>
+                        <option value="Jigawa">Jigawa</option>
+                        <option value="Kaduna">Kaduna</option>
+                        <option value="Kano">Kano</option>
+                        <option value="Katsina">Katsina</option>
+                        <option value="Kebbi">Kebbi</option>
+                        <option value="Kogi">Kogi</option>
+                        <option value="Kwara">Kwara</option>
+                        <option value="Lagos">Lagos</option>
+                        <option value="Nasarawa">Nasarawa</option>
+                        <option value="Niger">Niger</option>
+                        <option value="Ogun">Ogun</option>
+                        <option value="Ondo">Ondo</option>
+                        <option value="Osun">Osun</option>
+                        <option value="Plateau">Plateau</option>
+                        <option value="Rivers">Rivers</option>
+                        <option value="Sokoto">Sokoto</option>
+                        <option value="Oyo">Oyo</option>
+                        <option value="Taraba">Taraba</option>
+                        <option value="Yobe">Yobe</option>
+                        <option value="Zamfara">Zamfara</option>
+
+                    </select>
+                    <div class="invalid-feedback alignLeft">Please fill out this field.</div>
+                </div>
+                <div class="form-group">
+                    <input class="form-control" type="text" pattern=".+@.+\..+" name="email" id="vemail"
+                        placeholder="Email" required>
+                    <div class="invalid-feedback alignLeft">Please fill out this field.</div>
+                </div>
+
+
+                <div class="form-group" id="small">
+                    <input class="form-control" type="password" name="password" id="vpassword1" placeholder="Password"
+                        required>
+                    <small class="passerror" style="display: none;">Please enter a password between 4 and 8
+                        characters.</small>
+                </div>
+                <div class="input-group mb-3">
+                    <input class="form-control" type="password" name="password" id="vpassword2"
+                        placeholder="Confirm Password" required>
+                    <div class="input-group-append">
+                        <button id="showhide" class="btn btn-outline-secondary input-group-text" type="button"> <img
+                                id="img" src="./images/show.png" alt="" height="24" width="24"> </button>
+                    </div>
+
+                </div>
+
+
+                <button id="vregBtn" type="submit" class="btn btn-primary">Sign up</button>
             </form>
-            <p>*all fields are required</p>
-        </div>
-        <div class="signin flex-container">
-            <h3>Sign in</h3>
-            <input type="text" name="email" id="email" placeholder="Email"><br>
-            <input type="text" name="password" id="password" placeholder="Password"><br>
-            <button id="signIn" type="submit">Sign in</button>
-            <button id="adminSign" type="submit">Admin Sign in</button>
+            <span>*all fields are required</span>
         </div>
     </main>
+
+    <div class="footer">
+        <h2>Footer</h2>
+    </div>
+    <script src="js/index.js"></script>
+
 </body>
-<script src="js/indexpg.js"></script>
 
 </html>

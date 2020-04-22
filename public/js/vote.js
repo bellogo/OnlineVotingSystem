@@ -27,7 +27,7 @@ $.ajax({
             }
         });
         alert("You have voted successfully")
-        window.location.replace("index.html");
+        window.location.replace("../index.html");
         }
     }
     

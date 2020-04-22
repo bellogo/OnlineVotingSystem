@@ -1,4 +1,4 @@
-alert("jquerry start")
+//alert("jquerry start")
 // registration button
 $('#cregBtn').click((e) => {
     e.preventDefault()

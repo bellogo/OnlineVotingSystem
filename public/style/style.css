@@ -1,9 +1,170 @@
-body {
-    margin: 0;
-    font-family: "Helvetica", sans-serif;
-    color: black;
-    background-color: seashell;
-    font-size: 22px;
-    text-align: center;
+@font-face {
+  font-family: 'PermanentMarker';
+  src: url("../fonts/PermanentMarker.ttf") format('truetype')
+}
+
+@font-face {
+  font-family: 'Courgette-Regular';
+  src: url("../fonts/Courgette-Regular.ttf") format('truetype')
+}
+
+@font-face {
+  font-family: 'Baloo-Regular';
+  src: url("../fonts/Baloo-Regular.ttf") format('truetype')
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 847px) {
+  /* .row, .navbar {   
+    flex-direction: column; */
+
+    .left {
+      flex-grow: 1;
+      padding: 20px;
+      min-width: 400px;
+      max-width: 600px;
+    }
+
   }
 
+.flex-row-nowrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10px;
+}
+
+.flex-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.flex-container-coloumn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.flex-container-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color:rgba(208, 211, 162, 0.795);
+
+}
+
+.footer {
+  padding: 20px;
+  text-align: center;
+  background-color:rgba(138, 82, 18, 0.863);
+}
+
+.left {
+  flex-grow: 1;
+  padding: 20px;
+  background-color:rgba(190, 189, 171, 0.226);
+
+  min-width: 400px;
+
+}
+
+.right {
+  background-color:rgba(190, 189, 171, 0.226);
+  
+  flex-grow: 1;
+  padding: 20px;
+  min-width: 400px;
+  max-width: 600px;
+}
+
+body {
+  background-image: url(../images/background.jpg);
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+
+
+}
+
+
+main {
+  margin: 0;
+  font-family: "Helvetica", sans-serif;
+  text-align: center;
+  min-height: 563px;
+}
+
+.signin {
+  margin-bottom: 50px;
+}
+
+.alignLeft{
+  text-align: left;
+
+}
+
+#small {
+  text-align: left;
+}
+
+h1,
+h3 {
+  font-family: 'Baloo-Regular';
+}
+
+p {
+  font-family: 'PermanentMarker';
+  font-size: 22px;
+
+}
+
+
+/* :placeholder-shown {
+  font-family: 'Courgette-Regular';
+
+} */
+
+#password {
+  width: 180px;
+}
+
+.adminloginAgain{
+  padding: 10px;
+}
+
+span.continueLogIn {
+  font-size: 20px;
+  font-family: 'Baloo-Regular';
+  padding-right: 5px;
+}
+
+span:hover {
+  font-family: 'Baloo-Regular';
+  color: DarkCyan;
+
+}
+.weather {
+  border: 3px solid black;
+  border-radius: 10px;
+  background-image: url(../images/darkcloud.gif);
+  font-family: 'Courgette-Regular';
+  padding: 10px;
+  max-width: 355px;
+  min-height: 172px;
+}
+
+.weather:hover{
+  background-color:rgba(190, 189, 171, 0.863);
+}
+
+.right:hover {
+  background-color:rgba(190, 189, 171, 0.863);
+
+}
